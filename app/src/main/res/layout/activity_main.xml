@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Input field for the service cost -->
+    <EditText
+        android:id="@+id/cost_of_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter cost of service"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:padding="8dp" />
+
+    <!-- Tip percentage selection group -->
+    <RadioGroup
+        android:id="@+id/tip_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/option_twenty_percent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="20%"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <RadioButton
+            android:id="@+id/option_eighteen_percent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="18%"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <RadioButton
+            android:id="@+id/option_fifteen_percent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="15%"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+    </RadioGroup>
+
+    <!-- Round-up switch -->
+    <Switch
+        android:id="@+id/round_up_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Round up tip"
+        android:minHeight="48dp"
+        android:padding="8dp" />
+
+    <!-- Calculate button -->
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate Tip"
+        android:minHeight="48dp"
+        android:padding="8dp" />
+
+    <!-- Text view to display the tip result -->
+    <TextView
+        android:id="@+id/tip_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tip Amount"
+        android:textSize="18sp" />
+</LinearLayout>
